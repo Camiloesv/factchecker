@@ -17,4 +17,4 @@ jobs:
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           fail: true
-          args: --verbose --no-color travel_guide.md
+          args: --verbose travel_guide.md
