@@ -1,0 +1,15 @@
+name: Fact-Checker
+
+on: [pull_request]
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Check Links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose --no-color "**/*.md"
